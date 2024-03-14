@@ -20,6 +20,8 @@ jobs:
           cache: 'maven'
       - name: Build with Maven
         run: | 
+          echo ${{ github.repository }}
+          echo ${{ github.actor }}
           mvn -B package
           ls -lh target
           cp src/main/docker/Dockerfile ./target/
