@@ -24,5 +24,6 @@ jobs:
           ls -lh target
           cp src/main/docker/Dockerfile ./target/
           docker build --tag ghcr.io/dietmar-vk/minikube-demo-vk:latest ./target
+      
 
 
