@@ -28,8 +28,9 @@ jobs:
           mvn -B package
           ls -lh target
           cp src/main/docker/Dockerfile ./target/
-          docker build --tag ghcr.io/{{ github.repository }}:latest ./target
-          docker push ghcr.io/{{ github.repository }}:latest     
+          docker build --tag ghcr.io/${{ github.actor }}/minikube-demo-vk:latest ./target
+          docker push ghcr.io/${{ github.actor }}/minikube-demo-vk:latest  
+
       
 
 
