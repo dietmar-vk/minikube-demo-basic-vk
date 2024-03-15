@@ -16,7 +16,7 @@ data:
       NOREPLICATION
       CONNECTION LIMIT -1
       PASSWORD 'demo';
- 
+    
     CREATE DATABASE demo
         WITH 
         OWNER = demo
@@ -131,3 +131,4 @@ spec:
       protocol: TCP
   selector:
     component: postgres
+
