@@ -22,7 +22,7 @@ spec:
           do echo waiting for database; sleep 2; done;']
       containers:
         - name: appsrv
-          image: ghcr.io/dietmar-vk/minikube-demo-vk:latest
+          image: ghcr.io/dietmar-vk/minikube-demo-basic-vk:latest
           # remove this when stable. Currently, we do not take care of version numbers
           imagePullPolicy: Always
           ports:
